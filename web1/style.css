@@ -1,0 +1,266 @@
+body{
+    background-image: linear-gradient(45deg,rgb(101, 101, 150),rgb(103, 103, 195)); 
+}
+
+.armario{
+    background-color: rgb(159, 153, 153);
+    width: 15%;
+    height: 450px;
+    display: inline-block;
+    margin-top: 1%;
+    margin-left: 8%;
+    position: relative;
+    border-radius: 15px;
+    border-style: groove;
+}
+
+.maçaneta{
+    background-color: black;
+    width: 15px;
+    height: 75px;
+    position: relative;
+    bottom: -180px;
+    left: 20px;
+    border-radius: 15px;
+    border-style: groove;
+}
+
+.fechadura{
+    background-color: rgb(98, 98, 98);
+    width: 55px;
+    height: 5%;
+    position: relative;
+    bottom: -195px;
+    left: 15px;
+}
+
+.cadeado{
+    background-color: rgb(191, 143, 21);
+    width: 19px;
+    height: 4.6%;
+    position: relative;
+    bottom: -190px;
+    left: 24.9px;
+}
+
+.alça1{
+    background-color: rgb(167, 155, 155);
+    width: 1.5%;
+    height: 16px;
+    border-radius: 10px;
+    position: relative;
+    bottom: -154.5px;
+    left: 25px;
+}
+
+.alça2{
+    background-color: rgb(167, 155, 155);
+    width: 1.5%;
+    height: 16px;
+    border-radius: 10px;
+    position: relative;
+    bottom: -139px;
+    left: 39px;
+}
+
+
+.alça3{
+    background-color: rgb(167, 155, 155); 
+    width: 6.8%;
+    height: 4px;
+    border-radius: 10px;
+    position: relative;
+    bottom: -122px;
+    left: 25px;
+}
+
+.pado{
+    width: 6.8%;
+    height: 4px;
+    border-radius: 10px;
+    position: relative;
+    bottom: -140px;
+    left: 26px;
+    font-size: 6px;
+}
+
+.lt{
+    width: 6.8%;
+    height: 4px;
+    border-radius: 10px;
+    position: relative;
+    bottom: -28px;
+    left: 28px;
+    font-size: 5px;
+}
+
+.bnt1{
+    background-color: rgb(85, 227, 85); 
+    width: 3%;
+    height: 15px;
+    border-radius: 10px;
+    position: relative;
+    bottom: -116px;
+    left: 53px;
+    cursor: pointer;
+}
+
+.bnt2{
+    background-color: #ffff00; 
+    width: 3%;
+    height: 15px;
+    border-radius: 10px;
+    position: relative;
+    bottom: -116px;
+    left: 54px;
+    cursor: pointer;
+}
+
+.bnt3{
+    background-color: #ff0000; 
+    width: 3%;
+    height: 15px;
+    border-radius: 10px;
+    position: relative;
+    bottom: -116px;
+    left: 53px;
+    cursor: pointer;
+}
+
+.tranca{
+    background-color: black; 
+    width: 6%;
+    height: 5px;
+    border-radius: 10px;
+    position: relative;
+    bottom: -107px;
+    left: 34px;
+}
+
+.quadrado{
+    background-color: rgb(172, 164, 164); 
+    width: 28%;
+    height: 28px;
+    border-radius: 5px;
+    border-style: inset ;
+    position: relative;
+    top: -159px;
+    left: 97px;
+}
+
+.numero{
+    background-color: black;
+    width: 6.8%;
+    height: 0px;
+    border-radius: 10px;
+    position: relative;
+    top: -185px;
+    left: 118px;
+    font-size: 20px;
+}
+
+.ventilaçao{
+    background-color: rgb(146, 142, 142); 
+    width: 36%;
+    height: 10px;
+    border-radius: 3px;
+    border-style: inset;
+    position: relative;
+    top: -130px;
+    left: 87px;
+}
+
+.ventilaçao2{
+    background-color: rgb(146, 142, 142); 
+    width: 36%;
+    height: 10px;
+    border-radius: 3px;
+    border-style: inset;
+    position: relative;
+    top: -125px;
+    left: 87px;
+}
+
+.ventilaçao3{
+    background-color: rgb(146, 142, 142); 
+    width: 36%;
+    height: 10px;
+    border-radius: 3px;
+    border-style: inset;
+    position: relative;
+    top: -120px;
+    left: 87px;
+}
+
+.instruçoes{
+    height: 4px;
+    position: relative;
+    bottom: -80px;
+    left: 145px;
+    font-size: 23px;
+}
+
+.ins1{
+    background-color: rgb(94, 217, 94); 
+    width: 0.5%;
+    height: 17px;
+    border-radius: 10px;
+    position: relative;
+    bottom: -168px;
+    left: 290px;
+}
+
+.ins2{
+    background-color: red; 
+    width: 0.5%;
+    height: 17px;
+    border-radius: 10px;
+    position: relative;
+    bottom: -174px;
+    left: 290px;
+}
+
+.ins3{
+    background-color: yellow; 
+    width: 0.5%;
+    height: 17px;
+    border-radius: 10px;
+    position: relative;
+    bottom: -180px;
+    left: 290px;
+}
+
+.desocupado{
+
+    height: 4px;
+    position: relative;
+    bottom: -115px;
+    left: 306px;
+    font-size: 18px;
+}
+
+.ocupado{
+
+    height: 4px;
+    position: relative;
+    bottom: -134px;
+    left: 306px;
+    font-size: 18px;
+}
+
+.manutençao{
+
+    height: 4px;
+    position: relative;
+    bottom: -154px;
+    left: 306px;
+    font-size: 18px;
+}
+
+.clique{
+    height: 4px;
+    position: relative;
+    bottom: -180px;
+    left: 143px;
+    font-size: 18px;
+}

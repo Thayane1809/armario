@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>projeto</title>
+
+</head>
+<body>
+    <div class="armario">
+
+        <div class="maçaneta"></div>
+        <div class="fechadura"></div>
+        <div class="cadeado"></div>
+        <div class="alça1"></div>
+        <div class="alça2"></div>
+        <div class="alça3"></div>   
+        <div class="pado">PADO</div> 
+        <button class="bnt1 bnt" onclick="mudarStatus(this)"></button>
+        <div class="tranca"></div>
+        <div class="quadrado"></div>
+        <div class="numero">001</div>
+        <div class="ventilaçao"></div>
+        <div class="ventilaçao2"></div>
+        <div class="ventilaçao3"></div>
+        <div class="lt">LT-40</div>
+    </div>
+
+    <div class="armario">
+
+        <div class="maçaneta"></div>
+        <div class="fechadura"></div>
+        <div class="cadeado"></div>
+        <div class="alça1"></div>
+        <div class="alça2"></div>
+        <div class="alça3"></div>
+        <div class="pado">PADO</div>  
+        <button class="bnt2 bnt" onclick="mudarStatus(this)"></button>
+        <div class="tranca"></div>
+        <div class="quadrado"></div>
+        <div class="numero">002</div>
+        <div class="ventilaçao"></div>
+        <div class="ventilaçao2"></div>
+        <div class="ventilaçao3"></div>
+        <div class="lt">LT-40</div>
+    </div>
+
+    <div class="armario">
+
+        <div class="maçaneta"></div>
+        <div class="fechadura"></div>
+        <div class="cadeado"></div>
+        <div class="alça1"></div>
+        <div class="alça2"></div>
+        <div class="alça3"></div> 
+        <div class="pado">PADO</div> 
+       <button class="bnt3 bnt" onclick="mudarStatus(this)"></button>
+        <div class="tranca"></div>
+        <div class="quadrado"></div>
+        <div class="numero">003</div>
+        <div class="ventilaçao"></div>
+        <div class="ventilaçao2"></div>
+        <div class="ventilaçao3"></div>
+        <div class="lt">LT-40</div>
+    </div>
+
+    <div class="armario">
+
+        <div class="maçaneta"></div>
+        <div class="fechadura"></div>
+        <div class="cadeado"></div>
+        <div class="alça1"></div>
+        <div class="alça2"></div>
+        <div class="alça3"></div> 
+        <div class="pado">PADO</div> 
+        <button class="bnt1 bnt" onclick="mudarStatus(this)"></button>
+        <div class="tranca"></div>
+        <div class="quadrado"></div>
+        <div class="numero">004</div>
+        <div class="ventilaçao"></div>
+        <div class="ventilaçao2"></div>
+        <div class="ventilaçao3"></div>
+        <div class="lt">LT-40</div>
+    </div>
+
+        
+        <div class="instruçoes">Instruções:<br><br>Os armários a seguir possuem estados 
+        que são identificados pelas seguintes cores: verde, vermelho e amarelo. <strong>As cores podem ser alteradas
+        no json.
+        </strong><br>
+        Sendo elas:<br><br><br><br>
+        </div>
+
+        <div class="ins1"></div>
+        <div class="ins2"></div>
+        <div class="ins3"></div>
+
+        <div class="desocupado"><strong>Desocupado</strong></div>
+        <div class="ocupado"><strong>Ocupado</strong></div>
+        <div class="manutençao"><strong>Manutenção</strong></div>
+        <div class="clique"><strong>Clique nos botões para alterar o estado dos armários.</strong> </div>
+
+        <script src="script.js">
+
+fetch('armarios.json')
+    .then(response => response.json())
+    .then(data => {
+    
+      data.forEach(armario => {
+        const elemento = document.getElementById(armario.id);
+        if (elemento) {
+          elemento.classList.add(armario.status);
+        }
+      });
+    })
+    .catch(error => {
+      console.error('Erro ao carregar o arquivo JSON:', error);
+    });
+
+    </script>
+</body>
+</html>
